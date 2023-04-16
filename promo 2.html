@@ -1,0 +1,403 @@
+<!doctype html> <!--https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Great Wall Café</title>
+
+    <link rel="icon" class="rounded-circle" type="images" href="1.png" /> <!--https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> <!--get symbol-->
+    
+  
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> <!--get symbol-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--material icon -->
+    <style>
+      
+
+      /*footer*/
+      .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: green;
+  color: white;
+
+  padding: 20px;
+  
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+      
+.foot{
+  font-family: sans-serif,inherit;
+  cursor:pointer;font-size: 1.2em;color: black;
+}
+.foot:hover{
+    color: blue;
+}
+
+.tab{
+  margin-left: 40%;
+}
+
+
+
+.bol{
+    color: black;
+    text-decoration: inherit;
+    
+}
+
+.bol:hover{
+    color: blue;
+}
+
+    </style>
+  <link rel="stylesheet" href="extend.css">
+
+  <!--carousel-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap" rel="stylesheet">
+
+    
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--carousel--><!--carousel-->
+
+  </head>
+  
+  <body>
+
+    <!-- Messenger Chat plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat" >
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "106840484164658");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v16.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script> <!--END MSG-->
+
+<!--fb log-->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="6pAdwLMt"></script>
+<!--fb log--><!--fb log-->
+
+<div class="fb-login-button" data-width="100px" data-size="" data-button-type="" data-layout="" data-auto-logout-link="true" data-use-continue-as="true"></div>
+<!--fb log--><!--fb log-->
+
+    <a href="https://wa.me/601161102532" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+        </a>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary"><!--nav-->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src=1.png class="rounded-circle" width="60" height="60" alt="Café">&nbsp;&nbsp;&nbsp;Great Wall Café</a> <!--TAB--><!--https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/ ---->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Products.html">Product</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="Contact Us.html">Contact Us</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about.html">About Us</a></li>
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="promo.html">Promotion</a></li>
+                </ul>
+              </li>
+
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav> <!--end nav-->
+  
+
+
+<!--content--><!--content--> <!--main css file: style.css, main JavaScript file: main.js-->
+  <div class="content">
+    
+    <div class="container">
+      <h2 class="my-5 text-center">Promotion</h2>
+
+      <div class="d-flex carousel-nav">
+        <a href="#" class="col active">10 May to 13 May</a>
+        <a href="#" class="col">15 May to 18 May</a>
+        <a href="#" class="col">Happy Mother's Day (14 May)</a>
+      </div>
+
+
+      <div class="owl-carousel owl-1">
+
+        <div class="media-29101 d-md-flex w-100">
+          <div class="img">
+            <img src="images/hero_1.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="text">
+            <a class="category d-block mb-4" href="#">Travel &mdash; First Tab</a>
+            <h2><a href="#">Take your mobile photography to the next level</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae fuga optio dolorem, fugit voluptates sint ducimus praesentium iste!</p>
+          </div>
+        </div> <!-- .item -->
+
+        <div class="media-29101 d-md-flex w-100">
+          <div class="img">
+            <img src="images/hero_2.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="text">
+            <a class="category d-block mb-4" href="#">Travel &mdash; Second Tab</a>
+            <h2><a href="#">Take your mobile photography to the next level</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae fuga optio dolorem, fugit voluptates sint ducimus praesentium iste!</p>
+          </div>
+        </div> <!-- .item -->
+
+        <div class="media-29101 d-md-flex w-100">
+          <div class="img">
+            <img src="images/hero_3.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="text">
+            <a class="category d-block mb-4" href="#">Travel &mdash; Third Tab</a>
+            <h2><a href="#">Take your mobile photography to the next level</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae fuga optio dolorem, fugit voluptates sint ducimus praesentium iste!</p>
+          </div>
+        </div> <!-- .item -->
+
+        
+
+      </div>
+    </div>
+  </div>
+    
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+<!--content--> <!--content-->
+
+
+
+
+  <!--footer-->
+          <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+          <div class="row" style="background-color: azure;">
+            <p><br><br></p>
+            <hr>
+            <div class="col-md-4 col-xs-4 col-xm-4" >
+              <div class="row">
+                <div class="col-md-12 col-xs-12 col-xm-12"  style="min-height: 400px;">
+                  
+                  <div style="text-align: center;"><h3 >CONTACT US</h3>
+                  <a  href="https://www.facebook.com/yan04y/" target="_blank" class="fa fa-facebook"></a> 
+                  <a  href="https://www.instagram.com/qwertyan08/" target="_blank" class="fa fa-instagram"></a>
+                  <a  href="mailto: d220137b@sc.edu.my" target="_blank" class="fa fa-google"></a> 
+                  <a  href="https://wa.me/601161102532" target="_blank" style="font-size: 1.2em;" class="fa fa-whatsapp "></a></div> <br>
+                  
+                  <i title="Call Us" class="fa fa-phone" onclick="window.location='tel:+601161102532'" style="cursor:pointer"></i><a title="Call Us" class="bol" href="tel:+601161102532">+601161102532</a> <br>
+                  <i title="Email Us" class="fa fa-envelope" onclick="window.location='mailto: d220137b@sc.edu.my'" style="cursor:pointer"></i><a title="Email Us" class="bol" href="mailto: d220137b@sc.edu.my">d220137b@sc.edu.my</a> <br>
+                  
+                  <div class="row"> 
+                    <div class="col-md-12 col-xs-12 col-xm-12">
+                      <div class="row">
+                        <table style="margin-left: 10px;">
+
+                          <tr >
+                            <td> <i title="Café locate" onclick="window.open('https://shorturl.at/ijuNZ')" style="cursor:pointer;"  class="fa fa-map" ></i></td>
+                            <td style="padding-right:6px;">  <a title="Café locate" target="_blank" class="bol" id="address" href="https://shorturl.at/ijuNZ">Great Wall Café, Paradigm Mall, Skudai Lbh, Taman Bukit Mewah, 81200 Johor Bahru, Johor</a></td>
+                           
+                          </tr>
+
+                        </table>
+                     </div></div></div>  <!--https://goo.gl/maps/MiwYLkoveicpE2EN9--> <!--target onclick https://stackoverflow.com/questions/19588708/how-to-use-both-onclick-and-target-blank-->
+                  
+                </div>
+
+              </div>
+              
+            </div>
+
+            <div class="col-md-4 col-xs-4 col-xm-4">
+              <div class="row">
+                <div class="col-md-12 col-xs-12 col-xm-12" style="min-height: 400px;">
+<h4 style="text-align: center;">NEWSLETTER</h4>
+<form action="">
+
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+  <input class="form-control form-control-md form-control-xs form-control-xm required" type="text" placeholder="Enter your name" aria-label="default" required>
+</div>
+  <div class="mb-3">
+    <label class="form-label">Email address</label>
+    <input type="email" class="form-control  form-control-md form-control-xs form-control-xm" id="exampleFormControlInput1" placeholder="Enter your email address" required>
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Leave Us Message</label>
+    <textarea class="form-control  form-control-md form-control-xs form-control-xm" id="exampleFormControlTextarea1" rows="3" required></textarea>
+  </div>
+
+  <div class="mb-3">
+    <input style="cursor: alias;" class="form-check-input" type="checkbox" value="Accept Term & Condition"  required>
+  <label class="form-check-label" >
+    Accept Term & Condition
+  </label>
+  </div>
+
+  <div class="col-auto">
+    <button title="Submit" type="submit" class="btn btn-primary mb-3">Submit</button>
+  </div>
+</form>
+                </div></div>
+            </div>
+
+            <div class="col-md-4 col-xs-4 col-xm-4">
+              <div class="row">
+                <div class="col-md-12 col-xs-12 col-xm-12" >
+                    <h3 style="text-align: center;">USEFUL LINK</h3> <br>
+                    <p style="text-align: center;" title="Home" class="foot" onclick="window.location='index.html'">  Home</p> 
+                    <p style="text-align: center;" title="Product" class="foot" onclick="window.location='index.html'">  Product</p> 
+                    <p style="text-align: center;" title="About Us" class="foot" onclick="window.location='index.html'">  About Us</p> 
+                    
+                    <p style="text-align: center;" title="Promotion" class="foot" onclick="window.location='index.html'">  Promotion</p> 
+                    <p style="text-align: center;" title="Contact Us" class="foot" onclick="window.location='index.html'">  Contact Us</p> <!--<span class="tab"></span>-->
+                </div></div>
+            </div>
+
+          </div> <!--footer-->
+
+          <div class="row"> <!--copyright-->
+            <div class="col-md-12 col-xs-12 col-xm-12">
+              <div class="row">
+              <div
+              class="text-center p-3 text-white"
+              style="background-color: rgb(0, 0, 0);font-family: sans-serif;"
+              >
+           © 2021 Copyright:
+           <a class="setHrefFooter"  href="index.html"
+              >GreatWallCafe</a
+             ><!--#! close href-->
+         </div>
+            </div>
+            </div>
+            
+          </div> <!--copyright-->
+          
+        </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="facebook-domain-verification" content="lklnq2verbww2zuujz4zpozg12q8hw" />
+    <link rel="icon" class="rounded-circle" type="images" href="1.png" /> <!--https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/-->
+    <title>Log In</title>
+
+    <link rel="stylesheet" href="extend.css">
+
+    <style>
+      .center {
+  margin: auto;
+  width: 10%;
+  background-color: rgba(245, 245, 245, 0.508);
+  /*border: 3px solid #73AD21;*/
+  padding: 10px;
+}
+
+
+      </style>
+
+</head>
+<body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=231453186209124&autoLogAppEvents=1" nonce="aSuV12E5"></script>
+
+    <div>
+
+        <!--fb log-->
+        
+        
+        <script>
+
+          function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+            console.log('statusChangeCallback');
+            FB.login(function(response) {// The current login status of the person.
+            console.log(response); 
+                            
+            if (response.status === 'connected') {   // Logged into your webpage and Facebook.
+              testAPI();  
+            } else {                                 // Not logged into your webpage or we are unable to tell.
+              document.getElementById('status').innerHTML = 'Please log ' +
+                'into this webpage.';
+            }}, {scope: 'public_profile,email'});
+          }
+        
+        
+          function checkLoginState() {               // Called when a person is finished with the Login Button.
+            FB.getLoginStatus(function(response) {   // See the onlogin handler
+              statusChangeCallback(response);
+            });
+          }
+
+          //ww
+              window.fbAsyncInit = function() {
+                  FB.init({
+                    appId      : '231453186209124',
+                    cookie     : true,                     // Enable cookies to allow the server to access the session.
+                    xfbml      : true,                     // Parse social plugins on this webpage.
+                    version    : 'v16.0'           // Use this Graph API version for this call.
+                  });
+                  FB.AppEvents.logPageView();
+                  
+                  
+                  FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+                    if(response.status === 'unknown'||response.status === 'not_authorized') {
+                      statusChangeCallback(response);        // Returns the login status.
+                    }else{}
+                  });
+                };
+        
+                
+          (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+          //ww
+        
+        
+          
+         
+          function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+            console.log('Welcome!  Fetching your information.... ');
+            FB.api('/me', 'GET',
+      {"fields":"id,name,location,gender,email,picture"},function(response) {
+              console.log('Successful login for: ' + response.name);
+              document.getElementById('status').innerHTML =
+                'Thanks for logging in, ' + response.name +'\n\n Email: '+response.email+ '!';
+                
+            });//window.location = "/index.html";
+          }
+          
+        </script>
+        
+        
+        
+    
+                
+          
+
+        
+          
+        <!--fb log--><!--fb log-->
+        
+        <script>//https://stackoverflow.com/questions/8430474/fb-logout-called-without-an-access-token
+    
+          function logout(){
+            FB.getLoginStatus(function(response) {
+              FB.logout(function(response){
+                console.log("Logged Out!");
+                localStorage.clear();
+                window.location = "/index.html";
+              });
+            });
+          }
+          
+                                  
+                              
+            </script>
+            
+            </div>
+
+
+<div class="row"  align="center" style="background-image: url('bg1+.gif');background-repeat: no-repeat;min-height:100vh;background-size: cover;">
+
+  
+  <h4 class="center"><img  src="1.png" alt="" class="rounded-circle mx-auto d-block img-fluid" width="60px" height="60px"> <p>Great Wall Café</p></h4>
+  <!--<hr style="height: 3px;background-color: white;">-->
+  <div style="padding-top: 15vh;  color: white;margin-left: 10vw;">
+  <form action="">
+  <table  >
+    <tr>
+      <th><label style="font-size: 20px;" for="Email" >Email: </label></th>
+      <th><input style="font-size: 20px;margin-left: 30px;padding: 5px;" type="email" required class="form-control" id="Email" placeholder="email@example.com"></th>
+    </tr>
+    <tr><th>&ensp;</th></tr><!--blank-->
+    <tr>
+      <th><label style="font-size: 20px;" for="inputPassword6" class="form-control form-control-lg" >Password: </label></th>
+      <th><input  placeholder="Password" type="password" id="inputPassword6" style="font-size: 20px;margin-left: 30px;padding: 5px;" class="form-control form-control-lg" aria-labelledby="passwordHelpInline"></th>
+    <th><span id="passwordHelpInline" class="form-text" style="font-size: small;margin-left: 10px;">
+      Must be 8-20 characters long.
+    </span></th>
+    </tr>
+<tr><th>&ensp;</th></tr><!--blank-->
+    <tr>
+      <td>&ensp;</td>
+      <th><button type="submit"  style="background-color: rgb(236, 236, 255);font-size: 20px;padding: 5px;float: right;">Submit</button></th>
+    </tr>
+    
+  </table>
+  
+  </form></div>
+
+
+  <div class="row centered" style="top:80%;">
+
+    
+
+
+     <div style="float:left" class="fb-login-button" data-width="" data-size="large" data-button-type="" data-layout="" data-auto-logout-link="true" data-use-continue-as="true">Continue with Facebook</div>
+    
+    <button  style="float: left;height: 37px;width: 200px;" type="button" onclick="logout()">LogOut</button>
+    <br><br><p style="color: black;" id="status"></p>
+    <button style="height: 37px;width: 200px;" type="button" onclick="window.location='index.html'">Back</button>
+  </div>
+  
+
+            
+
+            
+
+            <!--https://www.w3schools.com/howto/howto_css_full_page.asp-->
+            
+                  
+                  
+                    
+              
+              
+    
+             
+          </div>
+            
+            
+  
+<!--fb log--> <!--fb log-->
+</body>
+</html>
