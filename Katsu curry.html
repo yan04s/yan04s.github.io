@@ -249,15 +249,21 @@ git push -u origin main
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="Products.html">Product</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"  aria-expanded="true" href="Products.html">Product</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Food.html">Food</a></li>
+                  <li><a class="dropdown-item" href="Dessert.html">Dessert</a></li>
+                  <li><a class="dropdown-item" href="Snarks.html">Snarks</a></li>
+                  <li><a class="dropdown-item" href="Drinks.html">Drinks</a></li>
+                </ul>
               </li>
               
               <li class="nav-item">
                 <a class="nav-link active" href="Contact Us.html">Contact Us</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                <a class="nav-link dropdown-toggle active" href="" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                   More
                 </a>
                 <ul class="dropdown-menu">
@@ -305,7 +311,7 @@ git push -u origin main
           <div class="col-sm-1"></div>
           <div class="col-sm-1"></div>
           <div class="col-sm-10"style="min-height: 10vh;background-color: white;">
-            <a href="Food.html"><i style="font-size:30px;float:left;" class="fa">&#xf100;</i></a><b style="float:left;margin-top: 30px;">Back</b>
+            <i onclick="history.back()"  type="button" style="font-size:30px;float:left;color: blue;" class="fa">&#xf100;</i><b type="button" style="float:left;margin-top: 30px;color: black;" onclick="history.back()">Back</b> <!--b bold text--> <!--type button to set button style--><!--https://www.computerhope.com/issues/ch000317.htm#:~:text=You%20can%20use%20the%20history,event%20attribute%20of%20a%20button.-->
         </div>           
       </div>          
       </div>
