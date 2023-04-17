@@ -178,6 +178,42 @@ git push -u origin main
   </head>
   <body>
 
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106840484164658");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--END MSG CODE-->
+
+    <a href="https://wa.me/601161102532" class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+      </a>
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
     <script>
       // Get the button
@@ -204,65 +240,65 @@ git push -u origin main
 
 <div class="container-fluid">
   <nav class="navbar navbar-expand-lg " style="background-color: azure;"><!--nav-->
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src=1.png class="rounded-circle" width="60" height="60" alt="Café">&nbsp;&nbsp;&nbsp;Great Wall Café</a> <!--TAB--><!--https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/ ---->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"  aria-expanded="true" href="Products.html">Product</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Food.html">Food</a></li>
-                  <li><a class="dropdown-item" href="Dessert.html">Dessert</a></li>
-                  <li><a class="dropdown-item" href="Snarks.html">Snarks</a></li>
-                  <li><a class="dropdown-item" href="Drinks.html">Drinks</a></li>
-                </ul>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link active" href="Contact Us.html">Contact Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                  More
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                  
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="promo.html">Promotion</a></li>
-                </ul>
-              </li>
-
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src=1.png class="rounded-circle" width="60" height="60" alt="Café">&nbsp;&nbsp;&nbsp;Great Wall Café</a> <!--TAB--><!--https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/ ---->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active"    href="Products.html">Product</a> <!--data-bs-toggle="dropdown"--> <!--aria-expanded="true"-->
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Food.html">Food</a></li>
+              <li><a class="dropdown-item" href="Dessert.html">Dessert</a></li>
+              <li><a class="dropdown-item" href="Snacks.html">Snacks</a></li>
+              <li><a class="dropdown-item" href="Drinks.html">Drinks</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" href="Contact Us.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">About Us</a></li>
+              
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="promo.html">Promotion</a></li>
+            </ul>
+          </li>
 
-            
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
 
-          </div>
-        </div>
-      </nav> <!--end nav-->
+        
+
+      </div>
+    </div>
+  </nav> <!--end nav-->
       
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <div class="container"style="min-height:90vh;margin-bottom:20px;margin-top:20px;">
-            <img src="C:\Users\User\Pictures\GreatWallcafebg.png" alt="" class="img-fluid">
+            <img src="GreatWallcafebg.png" alt="" class="img-fluid">
             <div class="centered">
                 Great Wall cafe offers a unique variety of foods and desserts to everyone at affordable prices.We are not only a place to drop in and get your morning cup of coffee,but we are also a place where you can sit down, rest and enjoy that tailor-made cup of coffee. All of our sauces are made in-house with all natural ingredients ensuring you the highest quality in taste & health.We look forward to serving you at Great Wall Cafe!
             </div>           
       </div>          
       </div>
         <div class="col-md-1"></div>
-        <a style="text-decoration: none;" align="center" class="setHref al" href="index.html"><img src="https://yan04s.github.io/1.png" class="rounded-circle" width="60" height="60" alt="Café"><br>Great Wall Café</a>
+        <a style="text-decoration: none;" align="center" class="setHref al" href="index.html"><img src="1.png" class="rounded-circle" width="60" height="60" alt="Café"><br>Great Wall Café</a>
       </div>
 
           <!--footer-->

@@ -173,6 +173,42 @@ git push -u origin main
   </head>
   <body>
 
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106840484164658");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--END MSG CODE-->
+
+    <a href="https://wa.me/601161102532" class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+      </a>
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
     <script>
       // Get the button
@@ -214,7 +250,7 @@ git push -u origin main
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="Food.html">Food</a></li>
                   <li><a class="dropdown-item" href="Dessert.html">Dessert</a></li>
-                  <li><a class="dropdown-item" href="Snarks.html">Snarks</a></li>
+                  <li><a class="dropdown-item" href="Snacks.html">Snacks</a></li>
                   <li><a class="dropdown-item" href="Drinks.html">Drinks</a></li>
                 </ul>
               </li>
@@ -252,7 +288,7 @@ git push -u origin main
           <div class="row">
           <div class="col-md-4">
           <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-            <a href="ChocolateWaffles.html"><img src="https://yan04s.github.io/waffle.jpg" alt="..."height="350px"width="398px"></a>
+            <a href="ChocolateWaffles.html"><img src="waffle.jpg" alt="..."height="350px"width="398px"></a>
             <div class="card-body">
               <h5 class="card-title">Chocolate Waffles</h5>
               <p class="card-text"style="Bold">Click the image above to learn more.</p>
@@ -319,7 +355,7 @@ git push -u origin main
       </div>          
       </div>
         <div class="col-md-1"></div>
-        <a style="text-decoration: none;" align="center" class="setHref al" href="index.html"><img src="https://yan04s.github.io/1.png" class="rounded-circle" width="60" height="60" alt="Café"><br>Great Wall Café</a>
+        <a style="text-decoration: none;" align="center" class="setHref al" href="index.html"><img src="1.png" class="rounded-circle" width="60" height="60" alt="Café"><br>Great Wall Café</a>
       </div>
 
           <!--footer-->

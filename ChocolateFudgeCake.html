@@ -174,6 +174,42 @@ git push -u origin main
   </head>
   <body>
 
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106840484164658");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--END MSG CODE-->
+
+    <a href="https://wa.me/601161102532" class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+      </a>
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
     <script>
       // Get the button
@@ -201,7 +237,7 @@ git push -u origin main
 <div class="container-fluid">
   <nav class="navbar navbar-expand-lg bg-body-tertiary"><!--nav-->
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="https://yan04s.github.io/1.png " class="rounded-circle" width="60" height="60" alt="Café">&nbsp;&nbsp;&nbsp;Great Wall Café</a> <!--TAB--><!--https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/ ---->
+      <a class="navbar-brand" href="index.html"><img src="1.png " class="rounded-circle" width="60" height="60" alt="Café">&nbsp;&nbsp;&nbsp;Great Wall Café</a> <!--TAB--><!--https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/ ---->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -278,7 +314,7 @@ git push -u origin main
       </div>          
       </div>
         <div class="col-md-2"></div>
-        <a style="text-decoration: none;" align="center" class="setHref al" href="index.html"><img src="https://yan04s.github.io/1.png" class="rounded-circle" width="60" height="60" alt="Café"><br>Great Wall Café</a>
+        <a style="text-decoration: none;" align="center" class="setHref al" href="index.html"><img src="1.png" class="rounded-circle" width="60" height="60" alt="Café"><br>Great Wall Café</a>
       </div>
 
           <!--footer-->
