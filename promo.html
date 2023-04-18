@@ -108,6 +108,23 @@
     <link rel="stylesheet" href="css/style.css">
     <!--carousel--><!--carousel-->
 
+    
+    <style>
+      /*navbar custom*/ /*https://stackoverflow.com/questions/42586729/how-can-i-change-the-bootstrap-4-navbar-button-icon-color*/ /*https://shorturl.at/styU3*/ /*https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/*/
+.navbar-toggler {
+  border-color: rgba(128, 128, 128, 0.449);
+}
+.navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+    </style>
+    
+    <style>
+      /*solve font*/
+      
+    </style>
+
   </head>
   
   <body>
@@ -180,13 +197,15 @@
 
 
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg " style="background-color: azure;"><!--nav-->
+
+      
+      <nav class="navbar navbar-expand-lg " style="background-color: azure;font-family: Arial, Helvetica, sans-serif"><!--nav-->
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src=1.png class="rounded-circle" width="60" height="60" alt="Café">&nbsp;&nbsp;&nbsp;Great Wall Café</a> <!--TAB--><!--https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/ ---->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
+          <div class="collapse navbar-collapse" id="navbarScroll" >
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -303,7 +322,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-          <div class="row" style="background-color: azure;">
+          <div class="row" style="background-color: azure;font-family: Arial, Helvetica, sans-serif">
             <p><br><br></p>
             <hr>
             <div class="col-md-4 col-xs-4 col-xm-4" >
