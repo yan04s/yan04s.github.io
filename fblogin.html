@@ -66,9 +66,9 @@
                   
                   
                   FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
-                    if(response.status === 'unknown'||response.status === 'not_authorized') {
+                    //if(response.status === 'unknown'||response.status === 'not_authorized') {
                       statusChangeCallback(response);        // Returns the login status.
-                    }else{}
+                    //}else{}
                   });
                 };
         
