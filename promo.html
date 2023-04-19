@@ -132,16 +132,6 @@
     <!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
 
-    <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "106840484164658");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
     <!-- Your SDK code -->
     <script>
       window.fbAsyncInit = function() {
@@ -158,15 +148,19 @@
         js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106840484164658");
+      chatbox.setAttribute("attribution", "biz_inbox");
     </script> <!--END MSG-->
 
-<!--fb log-->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="6pAdwLMt"></script>
-<!--fb log--><!--fb log-->
 
-<div class="fb-login-button" data-width="100px" data-size="" data-button-type="" data-layout="" data-auto-logout-link="true" data-use-continue-as="true"></div>
-<!--fb log--><!--fb log-->
 
     <a href="https://wa.me/601161102532" class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
