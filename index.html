@@ -100,6 +100,12 @@ git push -u origin main
     </style>
     <link rel="stylesheet" href="extend.css">
 
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106840484164658");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -131,11 +137,7 @@ git push -u origin main
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "106840484164658");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+    
 
     <!-- Your SDK code -->
     
