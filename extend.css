@@ -60,19 +60,20 @@
 	bottom:90px;
 	right:25px;
 	
-	
-	
+	opacity: 100%;
+	z-index:99;
   font-size:30px;
 	
   
 }
 
 .my-float{
+  
 	margin-top:0px;
     opacity: 100%;
     width: 70px;
     background-color:#25d366;
-}
+}.my-float:hover{opacity: 70%;}
 
 .contact3boxA{
   background-color: pink;
