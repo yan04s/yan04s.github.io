@@ -13,13 +13,11 @@ git push -u origin main
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Great Wall Café</title>
     <link rel="icon" class="rounded-circle" type="images" href="1.png" /> <!--https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> <!--get symbol-->
-    
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Back icon -->
 
     
     <style>
@@ -27,7 +25,7 @@ git push -u origin main
       .al:link { COLOR: black; TEXT-DECORATION: none; font-weight: normal }
       .al:visited { COLOR: black; TEXT-DECORATION: none; font-weight: normal }
       .al:active { COLOR: black; TEXT-DECORATION: none }
-      .al:hover { COLOR: blue; TEXT-DECORATION: none; font-weight: none }
+      .al:hover { COLOR: blue; TEXT-DECORATION: none; font-weight: none }      
       body{
         background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFhYYGBgaHB4cGRkcGSEfHBwhHBkcGhocIRwcIS4lHB8sIRoaJzomKy8xNTU1GiU7QDszPy40NTEBDAwMEA8QGBIRGDEhGCE0MTExMTExMTQxMTQ0NDQxMTQxNDQxNDE/NDE0NDQ0MT8xNDE0MTQ0NDE/NDExMTE0Mf/AABEIAJ8BPgMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAACAwQAAQb/xAA3EAACAQMDAgUCAwcEAwEAAAABAhEAITEDEkEEUSIyYXGBkaETsfAFQlJicsHRFIKS4TNj8UP/xAAYAQEBAAMAAAAAAAAAAAAAAAAAAQIEBf/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A9LrKE8btvYeWBAWfD4EB8xmJJm8SJin9DolEAPmMs3uTMewsPYCg0ekghnbewxaFXiQsnxRaTJuQIBiq657ZrUBBBmJn6296OhdwLkge5igyuDj6c1xLye9h7C35zSNTqtM41UB4O9fnn9WqhCIERHEYoOu0Ak8CfpUmm5REUDc7gtmBJguxPCgsBjkCrKiPTaiwEZdoELuF1FrSPMLDtgTN5AdZQnjdi7xAgQFnwwiTkkxJM3ieKo6HRKIFOblvdjJHsJgegFBodJBDO29hjhVtEhZN4tJJMWsLVVQagIIJMSD9fvxR0LuBckD3MfnQZGBx8jn6VtO8nvj2H6J+am1Oq0zYaqA996/PP6tVKEQIiOIxQbUfapbsCfoJqVHKKiKNzsCxvAmxdye0sLC9wO5FZFRHptRYCOpAEDcDuA4EjzfbAmbyHNZQnjdi7kQIEATaESbSbSTJ74qjotHYiqc5aMSTLR6SfpQaHSwd7tvfi0Kto8KybxaSSeJi1VUGoDIJMSD9RaOeKOhdwMkD3MfnQZXBx89/pXNMzJ749hYfHPzU+p1WmcaqA/1rg55/VqqUiBERxGKAdfU2IznCqWPwJ/tU4JQIijc5BJOBmXdj6scC5J7SRURNjUZ6bUWyOpEAAsPEAMAkebntPM3kA11CSzku5G0cRusFRZtJ5JnubCquk0diKvIye5Jlj7STQdP0sHc7b34OAv8ASsmDHJJJ71TQagggkxIN/UWA54tR0LuFyQPcx+dB1GBx/wB/Sh07373Htgf5+an1Oq0zYaqA4864ORmqlIi2PSgDqNTYjPnapaPYE/2pAJQLpoNzxJJsM+J2I5JJsMk8CSKXUEEESCII7g5qRun1QfC6kQBLDxQMSR5sntmgX1CBJZiXdhtHzhVXCgnmeLkxVnS6OxFWZIFz3Jux+SSfml9P0u07mYu/fAHcKs29ySTyapoNQXBJiQb2yLAfS1HQu4XzED3MfnQZHBx8+n1rmlcT3M/GB9gPrU79Vpmw1UnB8a3HIzVQPbFAHU6m1GYZCkj4FqTv/DCoiHUYCT9bsfUtPveqHQEEESCCCO4NiKkOhqg2ZWsB4pDQMSQL5PbOKC2tWoNV4AgSSYUYk5zwAAT8c4oJOr1mLbFJHePMTAMDtZlPySbLBiPSjcSQLZk5Mm25vUG4ANjbE0PpsdWzqX2zAEBSpg3vBI1B3kDixA6qPMlSp9AT3uAk7cnJ5Pc0UnW0QQdo2RkSSZv37xYQOJzYtHpHALI3jUwYEB+QYxcHB7zPFdQOCP8AyniCrhfsT+VVIupt2quwdybnuZyD/t9iKCjpNfegaIJFx8T9wQfmnVL+z9LahP8AExM9wPCsDgbVWPSqqI1atQarxECSTAGL5zwAAT8UEfV6zF9ikji3mJAUkDtZgZ95xBjPSjcSQtjGcmSCJPqGuBNsd6GRjqmHBbbMAQAVs3fIdQReQBiAQOojzJUr7AnvcBJ25bJ/ePc0UnW0AR4QUjiZM3zPJggCBx/F4S0elcKX028SmCBEPABBAFiCCLfM8V1A8/8A6kREFX2/Ym3xVSLqFdoXYOSTczkzkH/aPcUFPS6+9A0ROR+vr802pf2fp7U77iWnuCfDbgbQoj0qqiNWrUGq8RAkkwB8Tc8AAE0EfVarM+wEgYt5iYDRPFmB+DM2Bj/0qySQtjGcmTYk3yDdR8VQUY6h2upeAcQAR4W78FJBmYGCAaHUV5nay+wJN5xsmLk5bk+1FJ1dAHyygtaZPrIM3ni3mWc27o9O6qXQ+IG4GGsDIFgQQRaxvM8USh//AGkREFX249zb0iqkXUI2hdi8yZJnJnMm82B9Rmgp6bW3oGiJ4+xptTdAkILzuJaf6iSPa0D4qmiNWrUGq5EACWJgDjEkn0gfqaCPqdVmfYpIAt4ckwDngXz6GxkCox0qyTC2MZye0mTPqouDgVR+G34jFXUsADiBPlcDPASQTwMETQ6ivM7WWewZjzjZIAubE8/FFK1NAHyygxEzF4MySJmLfzD1jaXTuqb0Nx5lAs1gbCwNotYi9zaiUPg/ikREMrxj3YfaqlR2XaFCLzJkmcmckm82B9RQVdPq71DYn8wYP3plTdBpwg53EtP9bFvyIqmiNWrUvVciABLHE49SfQf3Hegj6nUZn2KSALQLFrTM8Ad/TBkVIvSrJJVbGM5PuZM3nwi4IsMVQEb8RirhmABxAnysBn+BJE5i4NDqI/8ACyzwAWN+2yQB6T+QFFJ1enDeXwDtMxgGZJEyRb1HrXdPRdE3obidygWMZtYG3FiL3JolDz/+ptEMrxj/AHD7VUEdl27Qi4MmZHNwZPqIB9aCvQ1Nyhu/5gwR9QaOp+gSEXJmWM5lyWP51RRGpWupsQJKmY72KkX5gmPUCm1qCFnAZSC0b5KlCI3SpuRYS03q6g10LKwGSDHoeD9YrmlrBvQjKnzD3H98GgZQdQ5VWIzFvfA+8UdI1XBZUF4YFvQC4nt4gtvegaiBQFGAAB8CKKtWoNStdT4WAkqZjuCCCB63n4ptaghLAMpBaN91KERvkG5FhuIMGrqDXQspAzFvcXH3AraWqGxYjKnzD3H6FAdL6hyEYjMQPc2H3IplI1WDMqgzB3N6AAkT2O7bb0NA1EAAAwBA+LUVatQala4PhYCSpxyQQQYnnn4ptaghDAOhUtG4yChEb5m5AiX22NXUvqEJUgZyPcGR9wK7paobGRlT5h7jigOldSxCGMmw92O0fcim0h2DOqgztO5vSAYB7GSD/toHKoAgYFhXa1ag1K11MqwElZkckEXj1wfim1qCFWAdCpaCWBBQjbvljcgRLhbHvV1L6hCVIGbEe6kMPuBXdLVDYyMg5HoRxQHSupPgIFiYUHsWIUH702kMwZ1UGdpLN6WgA+vimP5aBwHArtatQalawIKsBMSCOSDEx6yFPwabWoIVYB0gtBLCChAXd48kDlQIPerqX1CEra5BBA77WDR8xFd0tVWwcZHI9CMg0B0nqvIR/FC+247Z+JJ+KdSGYM6gX2yWjgxtAPr4iY9KB9atWoBfUUEAsATgEgE/WiqLqdJERtqruNgSJLMbLJaS1+9d/Zzf+RR5VeEHYHTRo9BLH8rYAWUrWCmzJui+AYz39uKbS9TNp3en9/SgUugt9wxH7xK39CY4NO01UCFAA4jH2oNO7En0Mdsjn2+5owIY+oBP3v8ArtQHWrVNqOWYohiPO3IkSFH8xF/QEdxQObUUEAsATgEgE/FHUXU6SIh2qu5oUSJLMbCSZLdzM2Brv7Nazr+6rkJ6LsRo+GZhHERbACyk6yqbFN0CcAxnE+3FOpb5tO707etApdBL7hj+YlfoTFPRQAAoAHEY+1L0hLEn0t2OOfQD70ajxH2B+ZN/t9qA61aptRy7FFMAedxkWkKv80QSeARybA5tRQQCwBOASJPxR1F1OmiJCqssQokSWJN5m7WkkngE8V39mnwuOFdgvtAMfBJHx8UMWUrWVTlN0CcAxM978U2lvm0zH29f1/egUuil9wxmWJXAOCY5p6KAIUADiMfal6NySe+Oxj19IH1o0EMR6A/JmfyoDrVqm1GZ2KKSqr52GZzsX17nji5lQe2ooIBZQTgEiT8UVRdRpoiQqLLMqxAJaSNxM+bwhiSbwDRfs1jsYTIDsF9gcfBkfFBXSdZVJum4j0Fpxm496dS3N7TIz2j1oFLoJfcMd2JXAOCYp6qAAAABxGKXoiSScz9Pr6QPijQQxHFj8mZ/IUB1q1SuzOxRSVUWdhkn+BTx6txgXuoUNqKDtLKCcAkT9KKoup00RAqovidRG0HcNwOpM5OwMZN7UX7MYlDJmHdR7BiAPjHxQxXSdZVY3TcRaYFp9cjOadS3N7TIF+0cA0Cl0EvuAsYuxK4BwTHNUKoAAAAHEYpWjcknM/S08+hA+KNBBI4sfkzP5CgOtWqZtR2JCEKFsXK7pP8ACASMcnvbvAJ1kCeN2LvhYsFm0Io5MxMzeJp/Q6BRAD5rlvcmSPYY+KHQ6SDudt7DFoVeLL3jkybkCBaqqDUJBBkCZyOfibc0VA+oq+ZgvuQPzoOq4P8Ajmsl5PfHsLfnNS6nWaRt+KgbjxrN/ntVSMpA2kEcQZFB1mgE9hP0qTTcoiKoDO4LG8C8M7E9gWAgdwLZFlRHpXWAjjaBChluo7bgbiw+gmaAdZQnjcl3iBxE2hFGCTbM3EtiqOi0SiBTE3LRiWMmPSTA9AKDQ6SDudt7DBiAto8K8HNySbxMWqqg1AQQSQJB45+Jo6B9RV8zBfcgfnQdVwf8c/SuaZmT3x7DH9z81Nq9ZpG34qA/1rznnt/aqkYESpBHBFx9qDaj7VLdgT9BNSo5RURQGdgWJNhwXc+ktgZkYEkWVEelcQEcQBA3KZA4G4G4/wACZvIgdZAnjYl3I2g4if3UUeWTF5nu1hVHR6GxFU5FzGJJlo9JJoen6TadzMXfgmwXvtXj3MniYgVTQrUBBBJAmc9+3NjR0D6ir5mC+5A/Og6rg/45+lc0zMnvj2wPrn5qfU6vSNvxUB/rEwcjPaqVYESpBHEXH2oOa+psRnztUt9BP9qnEoE01AZyCSTZRfxu0d2OBkngAkVEd6jPS6gsjiIAG5SWAGAWB8Uf/ZvIBroElmJfUYbQcZ/dRR5QSMzxdrCqul0diKvIye5Jlj6CSaDp+l2nczF37mwH9K8e8k+sQKpoNQwQSQJBv64jn2FFQPqqvmYL7kD86DquDj/H2rmne/e49uPtf5qfU6vSNvxUB/rXByM1UjAiQQRwRigDqNTYjvnapb6An+1IugXTQbmiSTgX8TtGSSSYGTOLmqmUEEESDYjvUZ6XUHlcRAEsstAxJB8XPb1m8gvXQJJJL6jDaDg3wqqLKpIv6CSTFWdLo7EVMwLmIk5JjiSSaX0/SBTuYl3xuOB3Cjj3uTAkmBFNBqGCCYEg/XAHOcUVBqaqr5mVfcgfnQdVwf1H51zTuJ73+OPtH1qd+r0iY/FQHnxrccjNVKwIkEEdxigDqdTajMMhSR7gWpMlAumib2Ak3GJjcZ5Jn3vVDoCCCJBEEdwc1J/ptQHwuGEAXHitiSAZyeBn6hbWrUGs8AQJJMKPXNzwAAT8UEfV6rFwgJHt5iYBIHazKfr2gyf6VZNltY4gm4yxByGuAMGw5e+mx1bPLbe0KCh73hiH9bC4wRzUR5kqQe4k/ICyRn7nEmik62iCPCCsfuhjm/fvFhHa3it3R6R4LI3jUxaAHAEj0uDg/UUSB5zqH0KuAfqPzqlE1Cu0LsHJJuZydwvPwPcUD+j196Bog2ke4B+JBB+afUv7P0tqE53MWnuPKsDgbVWB2qqiNWrUGs8RAkkwBxgkz6AAn4oI+r1SX2AkcWsSQFYieBDC/o0zYGT/AEqyTCwDBxc3BEsQZkNcdpintpsdQw8ttnywoKmGveDDqCL2HsRzUR5naVPJEnvcBJIyeeT3NFJ1tAEeEFAP3QxPfv3iwgZWRe3dHpXCl0bxKYtADiAQRxcEWP1rqB++obRBVwD9RH1qpE1Cu0KEXmTJM5O4XvzYH1FBR0mvvQNicj9fB+adU3Qae1JmdxLT3BPhtx4dtqpojVq1BquRAAkkwO2JJPpANBF1WqzPsBIGLWLGAxvwIYX9DYyKlHSrJssAxHBNwRJMzY3GcxxTzpsdQlXBaAcQsjwsAYPBSRfjBANc1NN5naV9QCe8wEki5OTye5opOtoBvKCot4QxP1nmeP5lmJttLpnC70PiXIFg1gRAwRBweeeKNA/87WiCrgH6gj6iqVTUI2hQi8yZJ7ncDJnnBvkUFPTa29A2JzTam6BIQXncS099xJHtaLelU0Rq1al6rkQBdiYE47kn0A/sOaCPqdRmfYCQBaBYkwDngXz6YJIqVemWSYWJIjAJHqTI72m0GOKf+G34jFXBaAcQsjwuAb9kkXwMEA0Lo8ztK+oBPcmAkkSScnntailavThvLKDEBiY7zOTJFv5hi8bT6Z1Teh8Q8wGGsDjBsYjMze0E1D/+xrRBVwPuCPqKpCajLt2hFwZMn1uDJnnBub0FXT6u9Q319xY0ypug04QZO6Wk58bFv71TRGrVqXquRAAljicCMk+g/Mgc0EfU6jO+wEgDgGC2JJPCib5xglhEi9MtzCxMRgE5yTuFowDkW4FC6bfiOVcFrHECfK4Bg28KyL4Fwb0Lo8ztK+0n6bJIz3+1qKVrdOG8soO242wDMzJki3rxBNbT6d1T8RD4hO5QLNHpacYsRe8iKNA//sa0QQ4GPUEfWqdjsu3aEXBBM29wfEO/lPrQV6GpuUN3z7gwfuKOp+gTai5vLGcy5LGfrVFEal66mxW5UzHexBHvBMesUytQQu4DKQXHjkqUIA3SpuV7tOauoNdCysoyQYPY8H6xXNLWDWw3KnzD45HqLUDKDqHIViMxb3Nh94o6RqOGZVBmGlo4CgkT2O7bagaiBQFGAAB8CKKtWoNStdTZlElTMdxBBF+YMj1FNrUEJYBlILxvupQgDfINyv8AEQc1dQa6FlIGYt75H3iuaWsGthuVPmHx/cWNAyl9Q5CNGYge5sv3IpkUh3DMqi8GWjiAYBPB3bTHoaBqKAABgCB8UVatQala6mzASVMx3BBBF+efim1qCHcA6kF43GQUIA3zNyoy+20/9XUGuhKkDOR7i4+4Fc0tYNix5U+Ye4/vg8UDKV1LEIYyfCPdjtH3IpsUhnDMqgztMtGBAIAPrJBj+WgcqgWGBiu1q1BqVrKbMBJXjkgi4E84PxTa1BCGAdSC8FmBBQgLvkm5UG7heeaupfUISpAzYj3B3D7iu6WsrYzypsw9xQHSuqPgIGTCj0LEKD8TNNikM4Z1AMhSSxGAYIAPr4pj+WgcBXa1ag1K1gQVYCSJBHJBiYnmQD8Gm1qCFGAdCC8EsIKEBd3iyVB8ygRPNXUvqEJUxmQR6lWDAfau6WqrYN+VNmHuOKA6T1XkI/ihf+R2k/AJPxTopBcM6gGQskkYBjaBPfxEx6UD61atQL1OoRSAzqpOAWAJ9gTemVH1KKiNsADN4VtJZmsJJux5JPANb9mn/wAijyq8IOADpo0AcCWP14xQWUrWCmzLui+Ae/B9qbQambTu9O3rJFqBI0EvuRREf0397cGnoFgbYjiMfal6d2JIva3abc+gH1NMXzH2BPvf9fFAVatU+o7OxRTAHnYZE3Cr6xcngEcmwMfqEUhWdVJwCwBPsCb0yo+pRUQhAAzeFbSWZuTN25JJmwJrfs02cDyq5Cei7EaPQBmYRxHGAMWUrWCmzJui+AYmYz7U2lvm07h27eskUCl0UvuVRH/G/vanoBHhiOIx9qXpXYk57dpt+QH3o1HiPsD83E/b7UB1q1TajM7FFMKPOwze+xexiCTwCIuZANfXRSFLqGOFLAE/BplR9SiIkKqgsQoEDxEm5M+a0kk8Amu/sw+Fx+6rsF9BYx6AEkRxHGKCulayqbFN0XwD3jPtTaW+bTI7duxkigUNFL7lW1vTAPNqegECIjiMfal6NySRefpb/ED4o18x9gfm/wDigOtWqZ2Z2KKSFFnYZJ/gXt6txgXuoNfqEDBS6hjhSwBPxM0yo+pVETaqqNzAAQPFJBcmc+EMST2Nb9mnwMOA7BfYHHwZHxQWUnWVWsUDR3AOcZ/OnUt82mR9PYyRQKGil9yrYwZxgHm1PQCBERxGKXo3JJzP0t6+kD4o1HiPax+TM/kKA61apXYuxVSVVbOwsSf4FPHq3GBeSAc3UIG2l1DHClhJ+JmmVH1KIiBVVRuZRt2i43A6kg58AYkmt+zCdhHAdwPYOQB8Y+KGLKTrKrZQNHcCx+bjOadS3N/DMjPb2Mkfr3oFDRS+5VsYvjAPPvVCRAiI4jFK0BJJOZ+lp59wPWKNBdvg/JmfyFAdatUrszkhG2hTBeAZPKgG0Dk97cGgVrKE8bku/lHputtReCTA5OJMYo6LRKIAY3XLR3YyfgTHsBQaHSbTuZi78EiAvHhXjm9zciYtVVDWoGBBkCfT/FHQPqqvmZV9yB+dB1Xn37HNbTMye+PYfo/WpNX9oaJt+KgPfcJH6FVabqR4SCMWMj2tQddoBPYTUum5VEVQC7gsScCYLufSWFh3AsLiyom6RxARwFAgBlkqOwIYGLC3pnsA6yhPGxLuRtB7TbaijEmPXEnFUdFo7ECmJuWjEkyY9JJoen6QKdzMXfuRAH9K8fc8TFqpoNQkEGQJnPf4oqB9VV8zKvuQPzoOo4P+DmuaZmT3x7cf5+al1f2hom34qA/1D5+1Vo6kSpBHoZH2oNqPtUt2BP0E1KjMioigM7AsScDBdz/ubAzPABIsqI9I4sjgKBADLJA7SGEgW+lyaEBroE8TEu7DaDg3/dRR5QTH0G5rA1V0mjsRVMSLkjBJJLH2kmg6fpQp3MS74k2A9FHH3PExEU0GoSCCSBIPHPa3HbtRUD6qrZmVT6kD86DquD79ua5pmb97j24/z81LqftDRNvxUB/qHOR8iq0cESpBHcGR9qDnUamxGfO1S0ewJ/tU43IF00ALwSWOBfxO0ZJY4GZOIJqoioz0riyag2wANyyQBgSGG4D69ybyAa6hPESX1GG0E5v+6gHlFrxGJJsDVfS6OxFXJAucSTdjHEkmg6fpQp3El3xuPHoo4/OwkmBVFBqAggkgTN45xHNuB2o6B9ZF8zKPcgfnQdVwf1BrmkZE97/HH2g/NSv1+i1vxUB/qGOR81WjgiQQR3BkfagHqdTYjv8AwqzfQE0i6BdNILRJZsC93MXZiZMcmbiqmUEQRIORUbdLqDy6giIG5CWgGwJDDdz29ZkyIXroEkyX1HG0E5vhVA8q2vEWEk2qzptHYipmBcxEnJMDEmT80HT9KFO4ks+Nx4HYD90fcwJJgVRQahIIJIEz9cAc24oqB9dF8zqPdgPzoOq4Pxn0+tbTxPe/+PsBUj9fosY/FQH+oXHI+arRwRIII7gyPtQD1OoVR2GQpI9wLUhmKbdPTTeQsnxbQBiS0GSTPvBNVOoIIIkEQR3ByKjPS6gPh1LRHiWWtiWkTk//AGSQtrVqXr6kAQJJMAet8+nPxQSdXqFnCAkDFrFjAJE8CGU/8sxBk/0qyRCx2gQTflmBF1bEeUmBT9TTJ1rPL7N0RAG0wCLGCQ8X3WFwbRzXTUHiZQO5BETmQLmf+8E0UGqhKwu5QB5VdvU5N7xa3Itew6XRtBZG8amARADCJB+ZwZnuKHSeSIJY4ILGD8MIFWomoQFChO97meZBMzzg3yKB/Ra+9AxEG0j3AI9pBBj1p9S9BphVJzuJM/O1bceFVtxVVEatWpetqERAkkwJxN8+nPxQSdXqFn2AkDEAwWICsb8CHH0axtUg6VZNlgGIixMmblgQZVsdpgYp7oTqkB5baDEQBB2yLGJ3D+KwvxA6yOPEygdzNpvcCSeTnucSaKHV0yywNyj+EO3rye8WEcra9h0ukbaXRvGpi1t4gEelwRY88ih0mvYluCCxi/owI+1Wrp6hG0AIvqZJn+YEkzefKb5oKOk196BsHkfr0g/NOqboNOF77izT3k29vDFvSqaI1atS9XUIgDLGBOMEyfYA0EfVajM+wEgYgGCxhWN+BDD6GxJESjpVk2WAYiBEgmblgRg44vbAe2mfxWAeWChiIgAixixiQVzux3AIDXVhdl29zNpuZABJ5Oe5iJNFc1dMsIG9Rbwh2/M+sZjzLMXoNPpGC70PjW1rBwACI+Dg89q5pNeFJaREFj8eYECrRpahWICLjMn5IJLTz5T60FPS629A2JyKbU37P040xeZJaTk7mJH2I+lU0Rq1al6rkQBEsYE45kn6H9XoIup1Gd9gJjEAwWMAkk/w+K+fYlhEy9Mt7LAMREAkepbcO9pz8B66ZOq4V5cAEyIAOGAtYQE7zHcAhesGFyu31m3JsASeTnuYiixtXTLCxZVt4Q7W7yTkzGYswxBodPpXCb0PjGQLBoAMdj2IPM3tQaTSfCS8iCCx+28ECrhpajALARbiCZNvNJBO4f8AEnvRVPTau9Q319wYNNqb9npGmLkzLScncxb+9U0YtWrUvWciAsbmMCcC0knv7e3vQRdS7O5QTGIBjdYSSf4bwbHixLCJk6Zb2WAYjAMXyW3CxBtORzYPVCdV9jy6gEyIAMQYtghUteYGCJpesGFyNvrNvWAJIyc97Riiua2kWEAui9g7WxMzm5FjFjxBoU6Z1T8RDDCdyjDbfoD7HBm9q5ptJsS0iCNx9cbwY/6q06bkbSAi4jNhkGCdw+RP2oKun1Nyhvr7gwfuDTKn6BYRcmZYk5JclzP1qiiP/9k=');
       }
@@ -170,7 +168,7 @@ git push -u origin main
 .Card_center{
     margin-left: auto;
     margin-right: auto 
-  }
+  } 
     </style>
     <link rel="stylesheet" href="extend.css">
   </head>
@@ -288,305 +286,44 @@ git push -u origin main
       </nav> <!--end nav-->
       
       <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-          <div class="row">
-          <div class="col-md-4">
-          <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-            <a href="Great Wall Fried Rice.html"><img src="friedrice.jpg" alt="..."height="350px"width="398px"></a>
-            <div class="card-body">
-              <h5 class="card-title">Great Wall Fried Rice</h5>
-              <p class="card-text"style="Bold">Click the image above to learn more.</p>
-              <div class="card-heading" style="margin-left: 20px;">RM 8.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-            </div>                  
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-            <a href="Katsu curry.html"><img src="kastuCurry.png" alt="... "width="398px"height="350px"></a>
-            <div class="card-body">
-              <h5 class="card-title">Katsu Curry</h5>
-              <p class="card-text">Click the image above to learn more.</p>
-              <div class="card-heading" style="margin-left: 20px;">RM 8.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-              </div>               
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-            <a href="Club Sandwich.html"><img src="sandwich.png" alt="..."height="350px"width="398px"></a>
-            <div class="card-body">
-              <h5 class="card-title">Club Sandwich</h5>
-              <p class="card-text">Click the image above to learn more.</p>
-              <div class="card-heading" style="margin-left: 20px;">RM 6.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-              </div>               
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-            <a href="Black Pepper Crab.html"><img src="crab.jpg" alt="..."height="350px"width="398px"></a>
-            <div class="card-body">
-              <h5 class="card-title">Black Pepper Crab</h5>
-              <p class="card-text">Click the image above to learn more.</p>
-              <div class="card-heading" style="margin-left: 20px;">RM 15.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-            </div>                  
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-            <a href="Fish Burger.html"><img src="fishBurger.jpg" alt="..."height="350px"width="398px"></a>
-            <div class="card-body">
-              <h5 class="card-title">Fish Burger</h5>
-              <p class="card-text">Click the image above to learn more.</p>
-              <div class="card-heading" style="margin-left: 20px;">RM 8.00  <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-              </div>               
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-            <a href="Mushroom-grilled chicken chop.html"><img src="chickenChop.jpeg" alt="..."height="350px"width="398px"></a>
-            <div class="card-body">
-              <h5 class="card-title">Mushroom-grilled chicken chop</h5>
-              <p class="card-text">Click the image above to learn more.</p>
-              <div class="card-heading" style="margin-left: 20px;">RM 12.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-              </div>               
-            </div>
-          </div>
-        </div>
-
-        <!--d-->
-        <div class="col-md-4"><!--d--><!--d-->
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="Cappuccino.html"><img src="https://th.bing.com/th/id/OIP.Pe-S01F7qQmyT8Md6QyK_wHaE8?pid=ImgDet&rs=1" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Cappuccino</h5>
-                <p class="card-text"style="Bold">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 8.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-              </div>                  
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="row"style="min-height:70vh;margin-bottom:20px;margin-top:20px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-6"style="background-color:white;">
+                  <div class="col-sm-12"style="background-color:white;">
+                    <b style="font-size: 2em;">Dessert</b>
+                      <img src="ice cream.png"
+                       alt="Chocolate Ice-Cream" width="480px"height="350px" style="margin-top: 0px;float: left;"> <!--img-fluid automatically fits to image size-->
+                       
+                    </div>
+                  </div>
+                  <div class="col-sm-4"style="background-color:white;float:left;">
+                      <div class="col-sm-12">
+                      <h3 style="margin-top: 50px;">Chocolate Ice-Cream Bowl</h3>
+                      <p>A chocolate ice cream bowl is a dessert made by creating a bowl out of melted chocolate and filling it with chocolate ice cream. It's typically topped with whipped cream and various toppings like nuts or chocolate chips. It's a decadent and delicious treat for chocolate lovers.</p>
+                         <p>Quantity <input type="number"min="1"Max="30"value="1"> Available stock:25</p>
+                      <div style="margin: 30px;">RM 5.50 <button style="margin-left: 30px;" class="btn btn-danger btn-xs" onclick="window.location='Payment.html'">AddToCart</button>
+                </div>
               </div>
-            </div>
           </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="Coffee.html"><img src="coffee.jpeg" alt="... "width="398px"height="350px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Coffee</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 8.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="Orange juice.html"><img src="https://th.bing.com/th/id/OIP.K9ROdDn4x6yZU707UpGCSQHaHh?pid=ImgDet&rs=1" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Orange Juice</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 5.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="carrotJuice.html"><img src="https://th.bing.com/th/id/OIP.fo3Tp8Ucju95ENqa7KzDCgHaHU?pid=ImgDet&rs=1" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Carrot Juice</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 5.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-              </div>                  
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="Milo.html"><img src="https://th.bing.com/th/id/R.183af1e50b91e50369aa75fa519b1fab?rik=SFBTdt2JW6pspA&riu=http%3a%2f%2fnurwanitarestaurant.com%2fwp-content%2fuploads%2f2019%2f10%2fMilo-Iced.jpg&ehk=BzeJzqkeQ1NyE7uRf3lyNmRlBTGyhuND0Kr%2fJodby34%3d&risl=&pid=ImgRaw&r=0" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Milo</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 3.00  <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="7-UP.html"><img src="https://th.bing.com/th/id/R.f88f82e627337ceae2d49eb9f1fc9d26?rik=plidqCQoyBHfEw&riu=http%3a%2f%2fwww.nicorossi.co.uk%2fFiles%2f101072%2fImg%2f12%2fSDCN015x1200.jpg&ehk=5qmoQGfx%2fjwDJhWwDnxKyGlu2TWsNSLzXci%2bGqHQuRA%3d&risl=&pid=ImgRaw&r=0" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">7-UP</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 3.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div><!--d--><!--d-->
-
-          <!--d-->
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="ChocolateWaffles.html"><img src="waffle.jpg" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Chocolate Waffles</h5>
-                <p class="card-text"style="Bold">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 8.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-              </div>                  
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="Chocolate Ice-Cream Bowl.html"><img src="ice cream.png" alt="Chocolate Ice-Cream"width="398px"height="350px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Chocolate Ice-Cream Bowl</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 5.50 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="ShinjukuCaramelBake.html"><img src="https://www.secretrecipe.com.my/uploads/YdIImCb5e7mpq2llzbX8XyoODlM6nMM1dwNc9gLO.jpg" alt="... "width="398px"height="350px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Shinjuku Caramel Bake</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 10.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="ConfettiRainbow.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTobJJBAa7m2ThORz3Ib3qJ2SVyjYKPK2jP-g&usqp=CAU" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Confetti Rainbow</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 9.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="ChocolateFudgeCake.html"><img src="https://www.secretrecipe.com.my/uploads/oDOPhx0Mnh1Ywn6916wt9rPznpLsisnP4drUsRB3.jpg" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Chocolate Fudge Cake</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 8.50 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-              </div>                  
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="PortugeseEggTart.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGaJLthV41DNGtY29OQjKfLSCTBinkFd_dFQ&usqp=CAU" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Portugese Egg Tart</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 2.50 (Each) <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="BrowniesWalnut.html"><img src="https://www.secretrecipe.com.my/uploads/eLyjSX1IjJKgXeCGbZX0gF8B3Lj5IGdB5YdrU4h0.jpg" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Brownies Walnut</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 3.50 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <!--d--><!--d-->
-
-          <!--d-->
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="FriedMushrooms.html"><img src="https://lh3.googleusercontent.com/eDu2ymd3cBsWjm8_3FoutH5zMQQ2Fdn89JmR9hlNE7p8Pte8NvEV7RWD9-L0C9Ac_O_qmqwsDtrEMJE6OUsz8QiXco7IVzGAofueytGbBkp0VR7vk_8juQ=s1200-p" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Fried Mushrooms</h5>
-                <p class="card-text"style="Bold">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 12.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-              </div>                  
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="RedHotBuffaloWings.html"><img src="https://www.tonyromas.com.my/i/m-starter-Buffalo-Wings.jpg" alt="... "width="398px"height="350px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Red Hot Buffalo Wings</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 14.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="PotatoSkins.html"><img src="https://www.tonyromas.com.my/i/m-starter-Potato-Skins.jpg" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Potato Skins</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 9.00 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="ChickenQuesadillas.html"><img src="https://www.tonyromas.com.my/i/m-starter-Chicken-Quasadillas.jpg" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Chicken Quesadillas</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 7.50 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-              </div>                  
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="GrilledChicken.html"><img src="https://www.tonyromas.com.my/i/m-salad-Asian.jpg" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Asian Salad with Grilled Chicken</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 11.50 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
-              <a href="MushroomSoup.html"><img src="https://www.tonyromas.com.my/i/m-soup.jpg" alt="..."height="350px"width="398px"></a>
-              <div class="card-body">
-                <h5 class="card-title">Mushroom Soup</h5>
-                <p class="card-text">Click the image above to learn more.</p>
-                <div class="card-heading" style="margin-left: 20px;">RM 5.50 <button style="float:right; margin-right: 30px; margin-bottom: 20px;" class="btn btn-danger btn-xs"  onclick="window.location='Payment.html'">AddToCart</button>
-                </div>               
-              </div>
-            </div>
-          </div>
-          <!--d--><!--d--><!--d-->
-
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10"style="min-height: 10vh;background-color: white;">
+            <i onclick="history.back()"  type="button" style="font-size:30px;float:left;color: blue;" class="fa">&#xf100;</i><b type="button" style="float:left;margin-top: 30px;color: black;" onclick="history.back()">Back</b> <!--b bold text--> <!--type button to set button style--><!--https://www.computerhope.com/issues/ch000317.htm#:~:text=You%20can%20use%20the%20history,event%20attribute%20of%20a%20button.-->
+        </div>           
       </div>          
       </div>
-        <div class="col-md-1"></div>
-        <a style="text-decoration: none;" align="center" class="setHref al" href="index.html"><img src="1.png" class="rounded-circle" width="60" height="60" alt="Café"><br>Great Wall Café</a>
+        <div class="col-md-2"></div>
+        <a  align="center" class="setHref" href="index.html"><img src="1.png" class="rounded-circle" width="60" height="60" alt="Café"><br>Great Wall Café</a>
       </div>
 
           <!--footer-->
           <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-          <div class="row" style="background-color: azure;">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+                    <div class="row" style="background-color: azure;">
             <p><br><br></p>
             <hr>
             <div class="col-md-4 col-xs-4 col-xm-4" >
@@ -660,11 +397,11 @@ git push -u origin main
                 <div class="col-md-12 col-xs-12 col-xm-12" >
                     <h3 style="text-align: center;">USEFUL LINK</h3> <br>
                     <p style="text-align: center;" title="Home" class="foot" onclick="window.location='index.html'">  Home</p> 
-                    <p style="text-align: center;" title="Product" class="foot" onclick="window.location='index.html'">  Product</p> 
-                    <p style="text-align: center;" title="About Us" class="foot" onclick="window.location='index.html'">  About Us</p> 
+                    <p style="text-align: center;" title="Product" class="foot" onclick="window.location='Products.html'">  Product</p> 
+                    <p style="text-align: center;" title="About Us" class="foot" onclick="window.location='about.html'">  About Us</p> 
 
-                    <p style="text-align: center;" title="Promotion" class="foot" onclick="window.location='index.html'">  Promotion</p> 
-                    <p style="text-align: center;" title="Contact Us" class="foot" onclick="window.location='index.html'">  Contact Us</p> <!--<span class="tab"></span>-->
+                    <p style="text-align: center;" title="Promotion" class="foot" onclick="window.location='promo.html'">  Promotion</p> 
+                    <p style="text-align: center;" title="Contact Us" class="foot" onclick="window.location='Contact Us.html'">  Contact Us</p> <!--<span class="tab"></span>-->
                 </div></div>
             </div>
 
