@@ -101,11 +101,20 @@ git push -u origin main
     <link rel="stylesheet" href="extend.css">
 
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "106840484164658");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+    
+    
+ 
+
+  </head>
+  <body>
+
+    
+
+
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your SDK code -->
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -122,25 +131,17 @@ git push -u origin main
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
- 
-
-  </head>
-  <body>
-
-    
-
-
-    <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
 
     <!-- Your Chat plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
 
-    
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106840484164658");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
 
-    <!-- Your SDK code -->
-    
     <!--END MSG CODE-->
 
     <a href="https://wa.me/601161102532" class="float" target="_blank">
