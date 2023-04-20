@@ -114,6 +114,16 @@ git push -u origin main
     <!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
 
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106840484164658");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
     <!-- Your SDK code -->
     <script>
       window.fbAsyncInit = function() {
@@ -130,16 +140,6 @@ git push -u origin main
         js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "106840484164658");
-      chatbox.setAttribute("attribution", "biz_inbox");
     </script>
 
     <!--END MSG CODE-->
@@ -224,7 +224,7 @@ git push -u origin main
       </nav> <!--end nav-->
 
       <div class="row">
-        <button type="button" onclick="window.location.href = 'fblogin.html'">Login</button><!--https://stackoverflow.com/questions/17565401/html-button-navigate-to-other-page-different-approaches-->
+        <button type="button" style="color: white;background-color: rgba(0, 0, 255, 0.713);border-radius: 5px;border: inherit;font-family: Marker Felt;letter-spacing: 2px;" onmouseout="this.style.opacity='100%'//,this.style.color=''//https://shorturl.at/cknQ7" onmouseover="this.style.opacity='70%'" onclick="window.location.href = 'fblogin.html'">Login</button><!--https://stackoverflow.com/questions/17565401/html-button-navigate-to-other-page-different-approaches--> <!--text spacing  https://www.w3schools.com/css/css_text_spacing.asp-->
     </div>
 
         <div class="row "style="margin-top: 10px;"> <!--align-items-center-->

@@ -176,6 +176,16 @@ git push -u origin main
     <!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
 
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106840484164658");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
     <!-- Your SDK code -->
     <script>
       window.fbAsyncInit = function() {
@@ -192,16 +202,6 @@ git push -u origin main
         js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "106840484164658");
-      chatbox.setAttribute("attribution", "biz_inbox");
     </script>
     <!--END MSG CODE-->
 
@@ -286,7 +286,7 @@ git push -u origin main
       
       <div class="row">
         <div class="col-md-1"></div>
-        <div class="col-md-10"><h3  style="width:75rem;margin-bottom: -20px;background-color: rgb(255, 255, 255);font-size: 2.8em;z-index: 1;font-weight: bold;font-family: Marker-Felt;padding-top: 10px;">&emsp;Dessert</h3>
+        <div class="col-md-10"><h3  style="margin-left:0.75rem;width:100%;margin-bottom: -20px;background-color: rgb(255, 255, 255);font-size: 2.8em;z-index: 1;font-weight: bold;font-family: Marker Felt;padding-top: 10px;">&emsp;Dessert</h3>
           <div class="row">
           <div class="col-md-4">
           <div class="card Card_center" style="width: 25rem; margin-top: 20px;">
