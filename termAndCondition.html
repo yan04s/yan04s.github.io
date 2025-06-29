@@ -6,48 +6,88 @@
   <title>Terms & Conditions | Great Wall Cafe</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
       color: #333;
     }
+
     header {
       background-color: #990000;
       color: #fff;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
     main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background: white;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .accordion {
+      background-color: #fff;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease-in-out;
     }
-    h2 {
-      margin-top: 40px;
-    }
-    .section-content {
-      display: none;
-      margin-top: 10px;
-    }
-    .toggle-btn {
-      background-color: #eee;
-      border: none;
-      color: #333;
-      padding: 10px;
+
+    .accordion-header {
+      background-color: #f0f0f0;
+      color: #990000;
       cursor: pointer;
-      border-radius: 4px;
-      margin-top: 10px;
+      padding: 18px 25px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      text-align: left;
+      width: 100%;
+      outline: none;
+      transition: background-color 0.3s ease;
     }
+
+    .accordion-header:hover {
+      background-color: #e0e0e0;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 25px;
+      background-color: white;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .accordion-content.show {
+      padding: 20px 25px;
+    }
+
+    .accordion-content p, .accordion-content ul {
+      margin: 0 0 15px;
+    }
+
+    .accordion-content ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #990000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
-      font-size: 0.9em;
-      color: #888;
-      margin-top: 40px;
-      padding-bottom: 20px;
+      padding: 30px 20px;
+      color: #666;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -57,26 +97,24 @@
   </header>
 
   <main>
-    <section>
-      <h2>1. Introduction</h2>
-      <button class="toggle-btn" onclick="toggleSection('intro')">Show/Hide</button>
-      <div class="section-content" id="intro">
+    <!-- Accordion Items -->
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">1. Introduction</button>
+      <div class="accordion-content">
         <p>These Terms and Conditions ("Terms") govern your use of the website located at <a href="https://yan04s.github.io/">https://yan04s.github.io/</a> operated by Great Wall Cafe.</p>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <h2>2. Acceptance of Terms</h2>
-      <button class="toggle-btn" onclick="toggleSection('accept')">Show/Hide</button>
-      <div class="section-content" id="accept">
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">2. Acceptance of Terms</button>
+      <div class="accordion-content">
         <p>By accessing or using our website, you agree to be bound by these Terms. If you do not agree, you may not use the site.</p>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <h2>3. Use of Website</h2>
-      <button class="toggle-btn" onclick="toggleSection('use')">Show/Hide</button>
-      <div class="section-content" id="use">
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">3. Use of Website</button>
+      <div class="accordion-content">
         <p>You agree to use the website for lawful purposes only. You must not:</p>
         <ul>
           <li>Misuse or interfere with the site’s security features</li>
@@ -84,63 +122,56 @@
           <li>Submit any harmful code (e.g. viruses, worms, etc.)</li>
         </ul>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <h2>4. Intellectual Property</h2>
-      <button class="toggle-btn" onclick="toggleSection('ip')">Show/Hide</button>
-      <div class="section-content" id="ip">
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">4. Intellectual Property</button>
+      <div class="accordion-content">
         <p>All content on this website, including images, text, graphics, and branding, is the property of Great Wall Cafe unless otherwise stated. You may not reproduce or distribute content without permission.</p>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <h2>5. Links to Other Websites</h2>
-      <button class="toggle-btn" onclick="toggleSection('links')">Show/Hide</button>
-      <div class="section-content" id="links">
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">5. Links to Other Websites</button>
+      <div class="accordion-content">
         <p>Our site may contain links to third-party websites. We are not responsible for the content or privacy practices of those websites.</p>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <h2>6. Changes to Terms</h2>
-      <button class="toggle-btn" onclick="toggleSection('changes')">Show/Hide</button>
-      <div class="section-content" id="changes">
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">6. Changes to Terms</button>
+      <div class="accordion-content">
         <p>We may update these Terms from time to time. Continued use of the website after changes are made constitutes acceptance of the updated Terms.</p>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <h2>7. Disclaimer</h2>
-      <button class="toggle-btn" onclick="toggleSection('disclaimer')">Show/Hide</button>
-      <div class="section-content" id="disclaimer">
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">7. Disclaimer</button>
+      <div class="accordion-content">
         <p>The content on this website is provided "as is" without warranties of any kind. We do not guarantee that the site will be available at all times or free of errors.</p>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <h2>8. Limitation of Liability</h2>
-      <button class="toggle-btn" onclick="toggleSection('liability')">Show/Hide</button>
-      <div class="section-content" id="liability">
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">8. Limitation of Liability</button>
+      <div class="accordion-content">
         <p>To the extent permitted by law, Great Wall Cafe shall not be liable for any damages arising out of or in connection with your use of the website.</p>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <h2>9. Governing Law</h2>
-      <button class="toggle-btn" onclick="toggleSection('law')">Show/Hide</button>
-      <div class="section-content" id="law">
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">9. Governing Law</button>
+      <div class="accordion-content">
         <p>These Terms shall be governed by and construed in accordance with the laws of your jurisdiction, without regard to conflict of law principles.</p>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <h2>10. Contact Us</h2>
-      <button class="toggle-btn" onclick="toggleSection('contact')">Show/Hide</button>
-      <div class="section-content" id="contact">
+    <div class="accordion">
+      <button class="accordion-header" onclick="toggleAccordion(this)">10. Contact Us</button>
+      <div class="accordion-content">
         <p>If you have any questions about these Terms, please contact us at <a href="mailto:support@nacc.uno">support@nacc.uno</a>.</p>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer>
@@ -148,9 +179,23 @@
   </footer>
 
   <script>
-    function toggleSection(id) {
-      const section = document.getElementById(id);
-      section.style.display = (section.style.display === 'block') ? 'none' : 'block';
+    function toggleAccordion(button) {
+      const content = button.nextElementSibling;
+      const isOpen = content.classList.contains('show');
+
+      // Close all other sections
+      document.querySelectorAll('.accordion-content').forEach(section => {
+        section.classList.remove('show');
+        section.style.maxHeight = null;
+      });
+
+      if (!isOpen) {
+        content.classList.add('show');
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        content.classList.remove('show');
+        content.style.maxHeight = null;
+      }
     }
   </script>
 </body>
