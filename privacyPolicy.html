@@ -1,117 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Privacy Policy | Great Wall Cafe</title>
-  <!-- <link rel="stylesheet" href="privacy.css"> -->
-   <style>
-        body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #fefefe;
-        color: #333;
-        }
-
-        header {
-        background-color: #c0392b;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        }
-
-        main {
-        padding: 20px;
-        max-width: 800px;
-        margin: auto;
-        }
-
-        section {
-        margin-bottom: 20px;
-        }
-
-        section h2 {
-        cursor: pointer;
-        background-color: #ecf0f1;
-        padding: 10px;
-        margin: 0;
-        border-left: 5px solid #c0392b;
-        transition: background-color 0.3s;
-        }
-
-        section h2:hover {
-        background-color: #dcdcdc;
-        }
-
-        section p {
-        margin: 10px 0 0 0;
-        padding-left: 15px;
-        }
-
-        footer {
-        text-align: center;
-        background-color: #f4f4f4;
-        padding: 15px;
-        font-size: 0.9em;
-        color: #777;
-        }
-   </style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #990000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      margin-top: 40px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    .toggle-btn {
+      background-color: #eee;
+      border: none;
+      color: #333;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .toggle-content {
+      display: none;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 40px;
+      padding-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Privacy Policy</h1>
-    <p>Effective Date: June 29, 2025</p>
+    <h1>Great Wall Cafe - Privacy Policy</h1>
   </header>
 
   <main>
     <section>
-      <h2 onclick="toggleSection(this)">1. Introduction</h2>
-      <p>This is a demo website for the Great Wall Cafe, available at <a href="https://yan04s.github.io/" target="_blank">yan04s.github.io</a>. This website is for demonstration purposes only and does not collect or process any personal data from users.</p>
+      <h2>1. Introduction</h2>
+      <p>Welcome to Great Wall Cafe’s website (<a href="https://yan04s.github.io/">https://yan04s.github.io/</a>). We value your privacy and are committed to protecting your personal information.</p>
     </section>
 
     <section>
-      <h2 onclick="toggleSection(this)">2. Information Collection</h2>
-      <p>We do not collect personal data such as names, emails, addresses, or payment information. No registration or login is required to use this demo site.</p>
+      <h2>2. Information We Collect</h2>
+      <button class="toggle-btn" onclick="toggleSection('info')">Show/Hide Details</button>
+      <div class="toggle-content" id="info">
+        <ul>
+          <li>IP address and browser type (for analytics)</li>
+          <li>Contact information you voluntarily provide (via contact forms or emails)</li>
+          <li>Cookies for basic website functionality</li>
+        </ul>
+      </div>
     </section>
 
     <section>
-      <h2 onclick="toggleSection(this)">3. Cookies and Tracking</h2>
-      <p>This site does not use cookies, analytics services, or any third-party tracking technologies.</p>
+      <h2>3. How We Use Your Information</h2>
+      <p>We use your information to:</p>
+      <ul>
+        <li>Improve website performance and usability</li>
+        <li>Respond to your inquiries</li>
+        <li>Understand how visitors interact with the site (via tools like Google Analytics)</li>
+      </ul>
     </section>
 
     <section>
-      <h2 onclick="toggleSection(this)">4. External Links</h2>
-      <p>This site may contain links to third-party websites. We are not responsible for the privacy practices or content of those sites.</p>
+      <h2>4. Cookies</h2>
+      <p>This site may use cookies to store session information or analyze traffic. You can disable cookies through your browser settings.</p>
     </section>
 
     <section>
-      <h2 onclick="toggleSection(this)">5. Contact</h2>
-      <p>For inquiries related to this demo, please contact the site maintainer via GitHub at <a href="https://github.com/yan04s" target="_blank">yan04s</a>.</p>
+      <h2>5. Third-Party Services</h2>
+      <p>We may use third-party services such as:</p>
+      <ul>
+        <li>Google Analytics for visitor tracking</li>
+        <li>Email/contact forms hosted via GitHub Pages or third-party email providers</li>
+      </ul>
     </section>
 
     <section>
-      <h2 onclick="toggleSection(this)">6. Changes to This Policy</h2>
-      <p>This policy may be updated to reflect changes in the site or to meet compliance needs. Last updated: June 29, 2025.</p>
+      <h2>6. Data Security</h2>
+      <p>We take reasonable steps to protect the information you provide from loss, misuse, and unauthorized access. However, no method of transmission is 100% secure.</p>
+    </section>
+
+    <section>
+      <h2>7. Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Request access to any personal data we may hold</li>
+        <li>Request correction or deletion of your data</li>
+        <li>Withdraw consent at any time</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions or concerns about this policy, please contact us at: <a href="mailto:greatwallcafe@email.com">greatwallcafe@email.com</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Great Wall Cafe Demo. All rights reserved.</p>
+    &copy; 2025 Great Wall Cafe. All rights reserved.
   </footer>
 
-  <!-- <script src="privacy.js"></script> -->
   <script>
-    function toggleSection(header) {
-    const content = header.nextElementSibling;
-    content.style.display = content.style.display === "none" ? "block" : "none";
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === 'none' || section.style.display === '' ? 'block' : 'none';
     }
-
-    // Collapse all sections initially (optional)
-    document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section p");
-    sections.forEach(p => p.style.display = "none");
-    });
   </script>
 </body>
 </html>
