@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | Great Wall Cafe</title>
+  <!-- <link rel="stylesheet" href="privacy.css"> -->
+   <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fefefe;
+        color: #333;
+        }
+
+        header {
+        background-color: #c0392b;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        }
+
+        main {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+        }
+
+        section {
+        margin-bottom: 20px;
+        }
+
+        section h2 {
+        cursor: pointer;
+        background-color: #ecf0f1;
+        padding: 10px;
+        margin: 0;
+        border-left: 5px solid #c0392b;
+        transition: background-color 0.3s;
+        }
+
+        section h2:hover {
+        background-color: #dcdcdc;
+        }
+
+        section p {
+        margin: 10px 0 0 0;
+        padding-left: 15px;
+        }
+
+        footer {
+        text-align: center;
+        background-color: #f4f4f4;
+        padding: 15px;
+        font-size: 0.9em;
+        color: #777;
+        }
+   </style>
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Effective Date: June 29, 2025</p>
+  </header>
+
+  <main>
+    <section>
+      <h2 onclick="toggleSection(this)">1. Introduction</h2>
+      <p>This is a demo website for the Great Wall Cafe, available at <a href="https://yan04s.github.io/" target="_blank">yan04s.github.io</a>. This website is for demonstration purposes only and does not collect or process any personal data from users.</p>
+    </section>
+
+    <section>
+      <h2 onclick="toggleSection(this)">2. Information Collection</h2>
+      <p>We do not collect personal data such as names, emails, addresses, or payment information. No registration or login is required to use this demo site.</p>
+    </section>
+
+    <section>
+      <h2 onclick="toggleSection(this)">3. Cookies and Tracking</h2>
+      <p>This site does not use cookies, analytics services, or any third-party tracking technologies.</p>
+    </section>
+
+    <section>
+      <h2 onclick="toggleSection(this)">4. External Links</h2>
+      <p>This site may contain links to third-party websites. We are not responsible for the privacy practices or content of those sites.</p>
+    </section>
+
+    <section>
+      <h2 onclick="toggleSection(this)">5. Contact</h2>
+      <p>For inquiries related to this demo, please contact the site maintainer via GitHub at <a href="https://github.com/yan04s" target="_blank">yan04s</a>.</p>
+    </section>
+
+    <section>
+      <h2 onclick="toggleSection(this)">6. Changes to This Policy</h2>
+      <p>This policy may be updated to reflect changes in the site or to meet compliance needs. Last updated: June 29, 2025.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Great Wall Cafe Demo. All rights reserved.</p>
+  </footer>
+
+  <!-- <script src="privacy.js"></script> -->
+  <script>
+    function toggleSection(header) {
+    const content = header.nextElementSibling;
+    content.style.display = content.style.display === "none" ? "block" : "none";
+    }
+
+    // Collapse all sections initially (optional)
+    document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section p");
+    sections.forEach(p => p.style.display = "none");
+    });
+  </script>
+</body>
+</html>
