@@ -27,24 +27,19 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
       margin-top: 40px;
     }
-    section {
-      margin-bottom: 30px;
+    .section-content {
+      display: none;
+      margin-top: 10px;
     }
     .toggle-btn {
       background-color: #eee;
       border: none;
       color: #333;
       padding: 10px;
-      margin-top: 10px;
       cursor: pointer;
       border-radius: 4px;
-    }
-    .toggle-content {
-      display: none;
       margin-top: 10px;
     }
     footer {
@@ -62,15 +57,19 @@
   </header>
 
   <main>
+    <!-- Section Template -->
     <section>
       <h2>1. Introduction</h2>
-      <p>Welcome to Great Wall Cafe’s website (<a href="https://yan04s.github.io/">https://yan04s.github.io/</a>). We value your privacy and are committed to protecting your personal information.</p>
+      <button class="toggle-btn" onclick="toggleSection('intro')">Show/Hide</button>
+      <div class="section-content" id="intro">
+        <p>Welcome to Great Wall Cafe’s website (<a href="https://yan04s.github.io/">https://yan04s.github.io/</a>). We value your privacy and are committed to protecting your personal information.</p>
+      </div>
     </section>
 
     <section>
       <h2>2. Information We Collect</h2>
-      <button class="toggle-btn" onclick="toggleSection('info')">Show/Hide Details</button>
-      <div class="toggle-content" id="info">
+      <button class="toggle-btn" onclick="toggleSection('info')">Show/Hide</button>
+      <div class="section-content" id="info">
         <ul>
           <li>IP address and browser type (for analytics)</li>
           <li>Contact information you voluntarily provide (via contact forms or emails)</li>
@@ -81,61 +80,72 @@
 
     <section>
       <h2>3. How We Use Your Information</h2>
-      <p>We use your information to:</p>
-      <ul>
-        <li>Improve website performance and usability</li>
-        <li>Respond to your inquiries</li>
-        <li>Understand how visitors interact with the site (via tools like Google Analytics)</li>
-      </ul>
+      <button class="toggle-btn" onclick="toggleSection('use')">Show/Hide</button>
+      <div class="section-content" id="use">
+        <ul>
+          <li>Improve website performance and usability</li>
+          <li>Respond to your inquiries</li>
+          <li>Understand how visitors interact with the site (via tools like Google Analytics)</li>
+        </ul>
+      </div>
     </section>
 
     <section>
       <h2>4. Cookies</h2>
-      <p>This site may use cookies to store session information or analyze traffic. You can disable cookies through your browser settings.</p>
+      <button class="toggle-btn" onclick="toggleSection('cookies')">Show/Hide</button>
+      <div class="section-content" id="cookies">
+        <p>This site may use cookies to store session information or analyze traffic. You can disable cookies through your browser settings.</p>
+      </div>
     </section>
 
     <section>
       <h2>5. Third-Party Services</h2>
-      <p>We may use third-party services such as:</p>
-      <ul>
-        <li>Google Analytics for visitor tracking</li>
-        <li>Email/contact forms hosted via GitHub Pages or third-party email providers</li>
-      </ul>
+      <button class="toggle-btn" onclick="toggleSection('thirdparty')">Show/Hide</button>
+      <div class="section-content" id="thirdparty">
+        <ul>
+          <li>Google Analytics for visitor tracking</li>
+          <li>Email/contact forms hosted via GitHub Pages or third-party email providers</li>
+        </ul>
+      </div>
     </section>
 
     <section>
       <h2>6. Data Security</h2>
-      <p>We take reasonable steps to protect the information you provide from loss, misuse, and unauthorized access. However, no method of transmission is 100% secure.</p>
+      <button class="toggle-btn" onclick="toggleSection('security')">Show/Hide</button>
+      <div class="section-content" id="security">
+        <p>We take reasonable steps to protect the information you provide from loss, misuse, and unauthorized access. However, no method of transmission is 100% secure.</p>
+      </div>
     </section>
 
     <section>
       <h2>7. Your Rights</h2>
-      <p>You have the right to:</p>
-      <ul>
-        <li>Request access to any personal data we may hold</li>
-        <li>Request correction or deletion of your data</li>
-        <li>Withdraw consent at any time</li>
-      </ul>
+      <button class="toggle-btn" onclick="toggleSection('rights')">Show/Hide</button>
+      <div class="section-content" id="rights">
+        <ul>
+          <li>Request access to any personal data we may hold</li>
+          <li>Request correction or deletion of your data</li>
+          <li>Withdraw consent at any time</li>
+        </ul>
+      </div>
     </section>
 
     <section>
       <h2>8. Contact Us</h2>
-      <p>If you have any questions or concerns about this policy, please contact us at: <a href="mailto:support@nacc.uno">support@nacc.uno</a></p>
+      <button class="toggle-btn" onclick="toggleSection('contact')">Show/Hide</button>
+      <div class="section-content" id="contact">
+        <p>If you have any questions or concerns about this policy, please contact us at: <a href="mailto:support@nacc.uno">support@nacc.uno</a></p>
+      </div>
     </section>
 
     <section>
       <h2>9. Account Data Erasure</h2>
-      <p>
-        If you have shared personal information with us-such as through contact forms, reservations, or newsletter subscriptions-you have the right to request the deletion of that data.
-      </p>
-      <p>
-        To request data erasure, please email us at <a href="mailto:support@nacc.uno">support@nacc.uno</a>
-        with the subject line "Data Deletion Request." Include the email address or identifying information used.
-      </p>
-      <p>
-        Upon verifying your request, we will delete your data from our systems within 30 days and confirm completion. Please note that some data may be retained if required by law (e.g., transaction records).
-      </p>
-      <a href="https://yan04s.github.io/eraseData.html">Data Erasure Request Criteria.pdf</a>
+      <button class="toggle-btn" onclick="toggleSection('erase')">Show/Hide</button>
+      <div class="section-content" id="erase">
+        <p>If you have shared personal information with us—such as through contact forms, reservations, or newsletter subscriptions—you have the right to request the deletion of that data.</p>
+        <p>To request data erasure, please email us at <a href="mailto:support@nacc.uno">support@nacc.uno</a> with the subject line "Data Deletion Request." Include the email address or identifying information used.</p>
+        <p>Upon verifying your request, we will delete your data from our systems within 30 days and confirm completion. Some data may be retained if required by law (e.g., transaction records).</p>
+        <a href="https://yan04s.github.io/eraseData.html">Data Erasure Request Criteria.pdf</a>
+      </div>
     </section>
   </main>
 
@@ -146,7 +156,7 @@
   <script>
     function toggleSection(id) {
       const section = document.getElementById(id);
-      section.style.display = section.style.display === 'none' || section.style.display === '' ? 'block' : 'none';
+      section.style.display = (section.style.display === 'block') ? 'none' : 'block';
     }
   </script>
 </body>
