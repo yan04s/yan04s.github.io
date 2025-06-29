@@ -5,49 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Privacy Policy | Great Wall Cafe</title>
   <style>
+    /* Base Styles */
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #990000;
-      color: #fff;
-      padding: 20px;
+      background-color: #9b1c1c;
+      color: white;
+      padding: 30px 20px;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
     main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
     }
+
     h2 {
-      margin-top: 40px;
+      font-size: 1.5rem;
+      color: #990000;
+      margin-top: 0;
     }
+
+    .toggle-btn {
+      display: inline-block;
+      background-color: #ddd;
+      color: #333;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .toggle-btn:hover {
+      background-color: #bbb;
+    }
+
     .section-content {
       display: none;
-      margin-top: 10px;
+      margin-top: 15px;
+      animation: fadeIn 0.3s ease-in-out;
     }
-    .toggle-btn {
-      background-color: #eee;
-      border: none;
-      color: #333;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 4px;
-      margin-top: 10px;
+
+    ul {
+      padding-left: 20px;
     }
+
+    a {
+      color: #990000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
-      font-size: 0.9em;
-      color: #888;
-      margin-top: 40px;
-      padding-bottom: 20px;
+      padding: 30px 20px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
@@ -144,7 +196,7 @@
         <p>If you have shared personal information with us—such as through contact forms, reservations, or newsletter subscriptions—you have the right to request the deletion of that data.</p>
         <p>To request data erasure, please email us at <a href="mailto:support@nacc.uno">support@nacc.uno</a> with the subject line "Data Deletion Request." Include the email address or identifying information used.</p>
         <p>Upon verifying your request, we will delete your data from our systems within 30 days and confirm completion. Some data may be retained if required by law (e.g., transaction records).</p>
-        <a href="https://yan04s.github.io/eraseData.html">Data Erasure Request Criteria.pdf</a>
+        <p><a href="https://yan04s.github.io/eraseData.html" target="_blank">Data Erasure Request Criteria.pdf</a></p>
       </div>
     </section>
   </main>
@@ -156,7 +208,8 @@
   <script>
     function toggleSection(id) {
       const section = document.getElementById(id);
-      section.style.display = (section.style.display === 'block') ? 'none' : 'block';
+      const isVisible = section.style.display === 'block';
+      section.style.display = isVisible ? 'none' : 'block';
     }
   </script>
 </body>
