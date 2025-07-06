@@ -25,7 +25,7 @@
 </head>
 <body>
   <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=231453186209124&autoLogAppEvents=1" nonce="aSuV12E5"></script>
+<!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=231453186209124&autoLogAppEvents=1" nonce="aSuV12E5"></script> -->
 
     <div>
 
@@ -34,43 +34,47 @@
         
         <script>
 
-          function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
-            console.log('statusChangeCallback');
-            FB.login(function(response) {// The current login status of the person.
-            console.log(response); 
-                            
-            if (response.status === 'connected') {   // Logged into your webpage and Facebook.
-              testAPI();  
-            } else {                                 // Not logged into your webpage or we are unable to tell.
-              document.getElementById('status').innerHTML = 'Please log ' +
-                'into this webpage.';
-            }}, {scope: 'public_profile,email'});
+          // Check login status
+          function statusChangeCallback(response) {
+            console.log("FB Status:", response);
+            if (response.status === 'connected') {
+              testAPI(); // Already logged in and authorized
+            } else {
+              // Not connected or needs login
+              FB.login(function (loginResponse) {
+                if (loginResponse.authResponse) {
+                  testAPI(); // Successfully logged in
+                } else {
+                  document.getElementById('status').innerText = 'Login cancelled or not authorized.';
+                }
+              }, { scope: 'public_profile,email' });
+            }
           }
         
         
-          function checkLoginState() {               // Called when a person is finished with the Login Button.
-            FB.getLoginStatus(function(response) {   // See the onlogin handler
-              statusChangeCallback(response);
-            });
-          }
+          // function checkLoginState() {               // Called when a person is finished with the Login Button.
+          //   FB.getLoginStatus(function(response) {   // See the onlogin handler
+          //     statusChangeCallback(response);
+          //   });
+          // }
 
           //ww
-              // window.fbAsyncInit = function() {
-              //     FB.init({
-              //       appId      : '231453186209124',
-              //       cookie     : true,                     // Enable cookies to allow the server to access the session.
-              //       xfbml      : true,                     // Parse social plugins on this webpage.
-              //       version    : 'v16.0'           // Use this Graph API version for this call.
-              //     });
-              //     FB.AppEvents.logPageView();
+              window.fbAsyncInit = function() {
+                  FB.init({
+                    appId      : '231453186209124',
+                    cookie     : true,                     // Enable cookies to allow the server to access the session.
+                    xfbml      : true,                     // Parse social plugins on this webpage.
+                    version    : 'v16.0'           // Use this Graph API version for this call.
+                  });
+                  FB.AppEvents.logPageView();
                   
                   
-              //     FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
-              //       //if(response.status === 'unknown'||response.status === 'not_authorized') {
-              //         statusChangeCallback(response);        // Returns the login status.
-              //       //}else{}
-              //     });
-              //   };
+                  FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+                    //if(response.status === 'unknown'||response.status === 'not_authorized') {
+                      statusChangeCallback(response);        // Returns the login status.
+                    //}else{}
+                  });
+                };
         
                 
           (function(d, s, id){
@@ -165,8 +169,8 @@
         <div class="col-md-8 col-xs-8 col-xm-8">
           <div class="row">
 
-     <!-- <button style="background-color: transparent; border: inherit;text-align: center;padding: inherit;margin: inherit;margin-left: 60px;"  class="fb-login-button" data-width="" data-size="large" data-button-type="" data-layout="" data-auto-logout-link="true" data-use-continue-as="true">Continue with Facebook</button> -->
-    <button  style="height: 37px;width: 200px;" type="button" onclick="checkLoginState()">Continue with Facebook</button>
+     <button style="background-color: transparent; border: inherit;text-align: center;padding: inherit;margin: inherit;margin-left: 60px;"  class="fb-login-button" data-width="" data-size="large" data-button-type="" data-layout="" data-auto-logout-link="true" data-use-continue-as="true">Continue with Facebook</button>
+    
     <button  style="height: 37px;width: 200px;" type="button" onclick="logout()">LogOut</button>
     <br><br><p style="color: black;" id="status"></p>
     <button style="height: 37px;width: 200px;" type="button" onclick="window.location='index.html'">Back</button>
