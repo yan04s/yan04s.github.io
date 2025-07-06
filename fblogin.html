@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="facebook-domain-verification" content="lklnq2verbww2zuujz4zpozg12q8hw" />
-  <link rel="icon" type="images" href="1.png" />
+  <link rel="icon" class="rounded-circle" type="images" href="1.png" /> <!--https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/-->
   <title>Facebook Login</title>
   <link rel="stylesheet" href="extend.css" />
 
@@ -14,6 +14,7 @@
       margin: auto;
       width: 10%;
       background-color: rgba(245, 245, 245, 0.508);
+      /*border: 3px solid #73AD21;*/
       padding: 10px;
     }
     #user-info {
@@ -27,6 +28,7 @@
 <body>
   <!-- Facebook SDK -->
   <div id="fb-root"></div>
+  <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=231453186209124&autoLogAppEvents=1" nonce="aSuV12E5"></script> -->
   <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/en_US/sdk.js"></script>
 
@@ -38,13 +40,22 @@
         xfbml: false,
         version: 'v19.0'
       });
-
+      FB.AppEvents.logPageView();
       FB.getLoginStatus(function (response) {
+        //if(response.status === 'unknown'||response.status === 'not_authorized') {
         if (response.status === 'connected') {
           fetchUserInfo();
         }
       });
     };
+
+    // (function(d, s, id){
+    //   var js, fjs = d.getElementsByTagName(s)[0];
+    //   if (d.getElementById(id)) {return;}
+    //   js = d.createElement(s); js.id = id;
+    //   js.src = "https://connect.facebook.net/en_US/sdk.js";
+    //   fjs.parentNode.insertBefore(js, fjs);
+    // }(document, 'script', 'facebook-jssdk'));
 
     function loginWithFacebook() {
       FB.login(function (response) {
@@ -57,7 +68,7 @@
     }
 
     function fetchUserInfo() {
-      FB.api('/me', { fields: 'name,email,picture' }, function (response) {
+      FB.api('/me', 'GET', { fields: 'id,name,email,picture,location,gender' }, function (response) {
         document.getElementById('status').innerHTML = `
           <div id="user-info">
             <p><strong>Name:</strong> ${response.name}</p>
@@ -67,7 +78,7 @@
       });
     }
 
-    function logout() {
+    function logout() {//https://stackoverflow.com/questions/8430474/fb-logout-called-without-an-access-token
       FB.logout(function (response) {
         document.getElementById('status').innerHTML = 'Logged out.';
       });
@@ -79,15 +90,16 @@
       <img src="1.png" alt="" class="rounded-circle mx-auto d-block img-fluid" width="60px" height="60px">
       <p>Great Wall Café</p>
     </h4>
+    <!--<hr style="height: 3px;background-color: white;">-->
 
     <div style="padding-top: 15vh; color: white; margin-left: 10vw;">
-      <form>
+      <form><!--action=""-->
         <table>
           <tr>
             <th><label style="font-size: 20px;" for="Email">Email:</label></th>
             <th><input style="font-size: 20px; margin-left: 30px; padding: 5px;" type="email" id="Email" placeholder="email@example.com" required></th>
           </tr>
-          <tr><th>&ensp;</th></tr>
+          <tr><th>&ensp;</th></tr><!--blank-->
           <tr>
             <th><label style="font-size: 20px;" for="inputPassword6">Password:</label></th>
             <th>
@@ -116,7 +128,7 @@
         <br><br>
         <button style="height: 37px; width: 200px;" onclick="window.location='index.html'">Back</button>
       </div>
-    </div>
+    </div><!--https://www.w3schools.com/howto/howto_css_full_page.asp-->
   </div>
 </body>
 </html>
